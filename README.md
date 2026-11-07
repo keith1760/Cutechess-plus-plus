@@ -1,5 +1,7 @@
 # Cutechess++
 
+[![DOWNLOAD CUTECHESS++](https://img.shields.io/badge/DOWNLOAD-CUTECHESS%2B%2B-brightgreen?style=for-the-badge)](https://github.com/keith1760/Cutechess-plus-plus/releases/latest)
+
 **Cutechess++** is an unofficial fork of [Cute Chess](https://github.com/cutechess/cutechess), with additional features and changes developed independently. It is not endorsed by the original Cute Chess project.
 
 ## Latest release: 1.3
