@@ -15,22 +15,30 @@ The current release provides builds for Linux and Windows, together with the sou
 
 [View all releases](https://github.com/keith1760/Cutechess-plus-plus/releases)
 
-## Main additions and changes
+## What is Cutechess++?
 
-Cutechess++ builds on the original Cute Chess application. Its additions include:
+Cutechess++ builds on the original Cute Chess application, with additions intended to make engine matches and tournament play more flexible.
 
-- Engine-versus-engine matches and tournament management.
-- Swiss tournaments, including crosstable reporting.
-- Game branching and move exploration, allowing a user to investigate alternative lines.
-- Pause and resume facilities.
-- Opening-book handling and random opening selection.
-- Board and interface customisation.
-- Further changes to engine and game management.
+### Main additions and changes
 
-The exact facilities and changes are described in the [Cutechess++ fork summary](https://github.com/user-attachments/files/34475960/Summary.OfCutechess%2B%2B.A.Cutechess.Fork.docx).
+- **Engine matches and tournaments:** tools for organising and running engine-versus-engine matches and tournaments.
+- **Swiss tournaments:** Swiss-system tournament support, with crosstable reporting.
+- **Game branching:** retract moves and explore alternative continuations during a game.
+- **Pause and resume:** pause games and continue them later.
+- **Opening books:** extended opening-book handling and random opening selection.
+- **Board and interface customisation:** additional options for adapting the display and interface.
+- **Engine and game management:** further improvements to the handling of engines, games and tournaments.
 
-## Source code and licensing
+A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](https://github.com/user-attachments/files/34475960/Summary.OfCutechess%2B%2B.A.Cutechess.Fork.docx).
 
-The source archive is provided for anyone wishing to inspect, build or modify Cutechess++. Please read the licence and notices included with the source before redistributing modified or unmodified versions.
+## Building from source
 
-Cutechess++ is an independent fork; the original Cute Chess project and its contributors are not responsible for this fork or its changes.
+The source archive is intended for users who wish to inspect, build or modify the application.
+
+- Cutechess++ uses **Qt 6**; the source build requires **Qt 6.8 or later**.
+- The Linux AppImage packages its Qt runtime, so a separate Qt installation is not normally required to run that AppImage.
+- The source archive includes the project's licence and notices. Please consult them before redistributing modified or unmodified versions.
+
+## Project status
+
+Cutechess++ is an independent fork. It is not an official release of, or endorsed by, the original Cute Chess project. The original project and its contributors are not responsible for this fork or its changes.
