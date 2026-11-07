@@ -11,9 +11,9 @@ The current release provides builds for Linux and Windows, together with the sou
 ### Downloads
 
 - **Linux (modern systems):** [Cutechess.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess.AppImage)
-- **Linux (older systems):** [CutechessThat.Runs.On.OldLinux04-11-26.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/CutechessThat.Runs.On.OldLinux04-11-26.AppImage)
-- **Windows:** [CutechessWindowsSwissByeRank4-11-26-WINDOWS.zip](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/CutechessWindowsSwissByeRank4-11-26-WINDOWS.zip)
-- **Source code:** [SOURCECutechess4-11-26-SOURCE.zip](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/SOURCECutechess4-11-26-SOURCE.zip)
+- **Linux (older systems):** [Cutechess++.Appimage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2B.Appimage)
+- **Windows:** [Cutechess++Windows.zip](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BWindows.zip)
+- **Source code:** [Cutechess++Sourcecode](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BSourcecode)
 
 [View all releases](https://github.com/keith1760/Cutechess-plus-plus/releases)
 
@@ -23,15 +23,59 @@ Cutechess++ builds on the original Cute Chess application, with additions intend
 
 ### Main additions and changes
 
-- **Engine matches and tournaments:** tools for organising and running engine-versus-engine matches and tournaments.
-- **Swiss tournaments:** Swiss-system tournament support, with crosstable reporting.
-- **Game branching:** retract moves and explore alternative continuations during a game.
-- **Pause and resume:** pause games and continue them later.
-- **Opening books:** extended opening-book handling and random opening selection.
-- **Board and interface customisation:** additional options for adapting the display and interface.
-- **Engine and game management:** further improvements to the handling of engines, games and tournaments.
+This document summarises the changes made in this fork of Cutechess.
 
-A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](https://github.com/user-attachments/files/34475960/Summary.OfCutechess%2B%2B.A.Cutechess.Fork.docx).
+#### 1. Pause engine-versus-engine matches
+
+Engine-versus-engine matches can now be paused and resumed.
+
+The board, clocks and game record remain unchanged, even if an engine has already started thinking or is about to return a move. The facility also works with games involving human players and with tournaments running several games concurrently.
+
+#### 2. Explore alternative moves and variations during a match
+
+This facility is intended for examining what might have happened had an engine chosen a different move, without losing or altering the original game. During an engine-versus-engine match, the user can choose an alternative move and have the engines continue playing from that branch. Branches within branches can be played through by the engines. The original game can be restored and restarted at any time.
+
+#### 3. Filter UCI instructions
+
+An optional filter has been introduced to ignore UCI instructions from engines which are not recognised by Cutechess. It is enabled by default and can be switched off under Settings → General. It is intended to "future proof" the program.
+
+#### 4. Introduce Swiss tournaments
+
+A Swiss tournament format has been added alongside the existing tournament formats.
+
+#### 5. Introduce tournament cross tables and reports
+
+#### 6. Save and review previous tournaments
+
+A new Previous Tournaments facility automatically saves tournament reports for later inspection.
+
+#### 7. Resume an interrupted tournament from its existing PGN file
+
+#### 8. Display the opening name prominently. Display the participating engines prominently. Display match scores and Elo differences
+
+#### 9. Customise the board and its appearance
+
+Users can choose colours of background, board squares, board size (indirectly) and piece colours.
+
+#### 10. Keep a named engine at the top or bottom of the board
+
+An option allows a selected engine to remain at the bottom of the board, irrespective of whether it is playing White or Black.
+
+#### 11. Position-evaluation bar has been added
+
+#### 12. Show opening-book moves one at a time in engine – engine matches
+
+This makes it possible to watch how a starting position develops from a .bin or .pgn opening source, rather than having the completed position appear immediately.
+
+#### 13. Save and restore configurations
+
+#### 14. Improve access to controls in smaller windows by scroll bars
+
+#### 15. Adjust randomness in opening-book selection
+
+#### 16. Have each engine in turn play both sides of an opening during an engine – engine match
+
+A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](https://github.com/keith1760/Cutechess-plus-plus/raw/master/docs/Cutechess%2B%2BFork%20Summary.docx).
 
 ## Building from source
 
