@@ -2,7 +2,9 @@
 
 *Summary of changes and additional features*
 
-> **Read it here, or download it:** [Download this summary as a Word document (DOCX)](https://github.com/keith1760/Cutechess-plus-plus/raw/main/docs/Cutechess%2B%2BFork%20Summary.docx) · [Back to the main page](../README.md)
+[![DOWNLOAD SUMMARY (DOCX)](https://img.shields.io/badge/DOWNLOAD-SUMMARY%20(DOCX)-brightgreen?style=for-the-badge&logo=microsoftword&logoColor=white)](https://github.com/keith1760/Cutechess-plus-plus/raw/main/docs/Cutechess%2B%2BFork%20Summary.docx)
+
+[← Back to the main page](../README.md)
 
 This document summarises the changes made in this fork of Cutechess. The additions focus on engine-versus-engine play, tournament and opening-book control, board presentation, configuration management and general usability.
 
