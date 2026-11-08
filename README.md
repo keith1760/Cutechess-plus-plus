@@ -10,72 +10,56 @@ The current release provides builds for Linux and Windows, together with the sou
 
 ### Downloads
 
-- **Linux (modern systems):** [Cutechess.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess.AppImage)
+- **Linux (modern systems):** [Cutechess++.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess.AppImage)
 - **Linux (older systems):** [Cutechess++.Appimage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2B.Appimage)
 - **Windows:** [Cutechess++Windows.zip](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BWindows.zip)
 - **Source code:** [Cutechess++Sourcecode](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BSourcecode)
 
-[View all releases](https://github.com/keith1760/Cutechess-plus-plus/releases)
+> [!WARNING]
+> **Linux users: AppImages will not run until they are set to "Execute".**
+> Downloaded files lose their execute permission, so the AppImage will do nothing (or report a permissions error) when you try to open it. Set the permission once, as follows:
+>
+> **From the terminal** (in the folder containing the download; use the file's actual name):
+>
+> ```
+> chmod +x Cutechess++.AppImage
+> ```
+>
+> **From the file manager:** right-click the AppImage → **Properties** → **Permissions** tab → tick **"Allow executing file as program"** (some systems say **"Is executable"**, or **"Execute"**) → close. Then double-click the file to run it.
 
 ## What is Cutechess++?
 
 Cutechess++ builds on the original Cute Chess application, with additions intended to make engine matches and tournament play more flexible.
 
-### Main additions and changes
+### Headline features
 
-This document summarises the changes made in this fork of Cutechess.
+1. **Pause and resume engine-v-engine matches.** The board, clocks and game record stay unchanged, even if an engine has already started thinking or is about to return a move. It also works with human games and with tournaments running several games concurrently.
+2. **Explore alternative moves during a match.** Pick a different move and the engines continue from that branch, so you can see what might have happened without losing the original game. Branches within branches are supported, and the original game can be restored and resumed at any time.
+3. **Swiss tournaments.** A new format alongside the existing ones. Round 1 pairs by seed; later rounds pair within score groups, top half against bottom half, with floaters moving down. Nobody meets the same opponent twice unless unavoidable. With an odd number of players, the lowest-ranked player without a bye sits out each round, and the bye counts as a win. Standings include bye points. Also available in cutechess-cli with `-tournament swiss`.
+4. **Tournament reports.** Cross tables and HTML reports, plus a Previous Tournaments window that saves reports automatically for later review.
+5. **Resume an interrupted tournament from its existing PGN file.**
 
-#### 1. Pause engine-versus-engine matches
+### Display and usability
 
-Engine-versus-engine matches can now be paused and resumed.
+6. Opening name, participating engines, scores and Elo differences shown prominently in engine-v-engine matches.
+7. Customisable board: background, square and piece colours, and board size (indirectly).
+8. Keep a chosen engine at the bottom (or top) of the board whichever colour it plays, so you can follow one engine's style without reorienting between games.
+9. Colour-coordinated position-evaluation bar.
+10. Scroll bars so controls stay reachable in small windows.
+11. Save and restore configurations.
 
-The board, clocks and game record remain unchanged, even if an engine has already started thinking or is about to return a move. The facility also works with games involving human players and with tournaments running several games concurrently.
+### Openings
 
-#### 2. Explore alternative moves and variations during a match
+12. Watch opening-book moves played one at a time (from a .bin or .pgn source) instead of the finished position appearing at once. The delay is configurable, and allows the watcher to see how the start position for the game developed. The pause between opening moves is independent of time limits.
+13. Paired openings: each engine in turn plays both sides of the same opening.
 
-This facility is intended for examining what might have happened had an engine chosen a different move, without losing or altering the original game. During an engine-versus-engine match, the user can choose an alternative move and have the engines continue playing from that branch. Branches within branches can be played through by the engines. The original game can be restored and restarted at any time.
+### Engine compatibility
 
-#### 3. Filter UCI instructions
+14. Optional filter that ignores UCI instructions that Cutechess doesn't recognise, to help with engines that send non-standard output. A "future-proofing" feature: new UCI instructions that a GUI does not recognise can cause crashes. This filters them out.
 
-An optional filter has been introduced to ignore UCI instructions from engines which are not recognised by Cutechess. It is enabled by default and can be switched off under Settings → General. It is intended to "future proof" the program.
+### General notes
 
-#### 4. Introduce Swiss tournaments
-
-A Swiss tournament format has been added alongside the existing tournament formats.
-
-#### 5. Introduce tournament cross tables and reports
-
-#### 6. Save and review previous tournaments
-
-A new Previous Tournaments facility automatically saves tournament reports for later inspection.
-
-#### 7. Resume an interrupted tournament from its existing PGN file
-
-#### 8. Display the opening name prominently. Display the participating engines prominently. Display match scores and Elo differences
-
-#### 9. Customise the board and its appearance
-
-Users can choose colours of background, board squares, board size (indirectly) and piece colours.
-
-#### 10. Keep a named engine at the top or bottom of the board
-
-An option allows a selected engine to remain at the bottom of the board, irrespective of whether it is playing White or Black.
-
-#### 11. Position-evaluation bar has been added
-
-#### 12. Show opening-book moves one at a time in engine – engine matches
-
-This makes it possible to watch how a starting position develops from a .bin or .pgn opening source, rather than having the completed position appear immediately.
-
-#### 13. Save and restore configurations
-
-#### 14. Improve access to controls in smaller windows by scroll bars
-
-#### 15. Adjust randomness in opening-book selection
-
-#### 16. Have each engine in turn play both sides of an opening during an engine – engine match
-
-A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](https://github.com/keith1760/Cutechess-plus-plus/raw/master/docs/Cutechess%2B%2BFork%20Summary.docx).
+A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](docs/Cutechess%2B%2B-Fork-Summary.md). It opens as a readable page here, and the page has a link to download the original Word (DOCX) file.
 
 ## Building from source
 
