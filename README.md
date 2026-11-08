@@ -59,7 +59,7 @@ Cutechess++ builds on the original Cute Chess application, with additions intend
 
 ### General notes
 
-A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](docs/Cutechess%2B%2B-Fork-Summary.md). It opens as a readable page here, and the page has a link to download the original Word (DOCX) file.
+A fuller account of the fork's changes is available in the [Cutechess++ fork summary (DOCX)](docs/Cutechess%2B%2BFork%20Summary.docx). It is a Word (DOCX) file, so GitHub offers it as a download.
 
 ## Building from source
 
