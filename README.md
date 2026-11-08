@@ -8,8 +8,8 @@ The current release provides builds for Linux and Windows, together with the sou
 
 ### Downloads
 
-- **Linux (modern systems):** [Cutechess++.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess.AppImage)
-- **Linux (older systems):** [Appimage for older versions of Linux](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2B.Appimage)
+- **Linux (modern systems):** [Cutechess++Recent-Linux.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BRecent-Linux.AppImage)
+- **Linux (older systems):** [Cutechess++Old-Linux.AppImage](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BOld-Linux.AppImage)
 - **Windows:** [Cutechess++Windows.zip](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BWindows.zip)
 - **Source code:** [Cutechess++Sourcecode](https://github.com/keith1760/Cutechess-plus-plus/releases/download/1.3/Cutechess%2B%2BSourcecode)
 
@@ -20,7 +20,7 @@ The current release provides builds for Linux and Windows, together with the sou
 > **From the terminal** (in the folder containing the download; use the file's actual name):
 >
 > ```
-> chmod +x Cutechess++.AppImage
+> chmod +x Cutechess++Recent-Linux.AppImage
 > ```
 >
 > **From the file manager:** right-click the AppImage → **Properties** → **Permissions** tab → tick **"Allow executing file as program"** (some systems say **"Is executable"**, or **"Execute"**) → close. Then double-click the file to run it.
